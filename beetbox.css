@@ -1,0 +1,137 @@
+html {
+  font-family: sans-serif;
+  font-size: max(3ch, 5vmax + 3vmin);
+}
+
+body {
+  display: flex;
+  flex-flow: anywhere;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > * {
+  padding: 1ch 1ch 1em;
+}
+
+h1 {
+  font-size: 1.618rem;
+  font-weight: unset;
+  justify-content: center;
+  animation: 3s ease-in-out swoon infinite;
+  border: 1ch groove hotpink;
+  border-radius: 100%;
+  display: table;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+footer {
+  align-items: flex-end;
+  animation: 3s ease-in-out swoon infinite;
+  border: 1ch groove fuchsia;
+  border-radius: 100%;
+  font-size: 1.618rem;
+  display: table;
+  margin: auto;
+  margin-inline-end: 1ch;
+}
+
+p {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+a {
+  display: inline-flex;
+  padding: 1vmin;
+}
+
+b {
+  text-shadow: 0 -1vh 1vh fuchsia;
+}
+
+kbd {
+  all: unset;
+  filter: hue-rotate(108deg);
+}
+
+span {
+  align-self: center;
+  background-color: #fbbfff;
+  display: inline-block;
+  margin-block: 50vh;
+  padding-inline: 1ch;
+  transform: rotate(108deg);
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin: auto;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+:root {
+  background: orchid;
+  color: indigo;
+  background-image: linear-gradient(.3turn, #e7d 0%, #eac 10%, #edc 50%, hotpink 50%);
+  line-height: 1.618;
+}
+
+:any-link {
+  color: inherit;
+  background-color: transparent;
+}
+
+.beet {
+  color: #bae4ea;
+  background-color: #923;
+  border: 1ch groove orchid;
+  border-radius: 100%;
+  box-shadow: 0 0 1em 1pc #923;
+}
+
+::selection {
+  background: deepskyblue;
+  color: indigo;
+}
+
+@keyframes swoon {
+  from {
+    text-shadow: 0 -1vh 0 violet;
+  }
+
+  to {
+    text-shadow: 0 -1vh 0 darkviolet;
+  }
+}
+
+:focus-within {
+  text-shadow: 0 2vh 2vw #fab;
+}
+
+:focus {
+  border-radius: 100%;
+  box-shadow: 0 0 0 10vmax darkorchid;
+  outline: 1ch groove mediumorchid;
+}
+
+[hidden] {
+  display: none;
+}
